@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Mees Rutten" />
+	<base href="https://meesrutten.me/level30wizards/particle-head" />
+	<!-- Primary Meta Tags -->
+	<title>Level30Wizards | Experiment</title>
+	<meta name="title" content="Level30Wizards | Experiment">
+	<meta name="description" content="A 3D Particle head moving on sound">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://level30wizards.com/experiments">
+	<meta property="og:title" content="Level30Wizards | Experiment">
+	<meta property="og:description" content="A 3D Particle head moving on sound">
+	<meta property="og:image" content="/images/header.jpg">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://level30wizards.com/experiments">
+	<meta property="twitter:title" content="Level30Wizards | Experiment">
+	<meta property="twitter:description" content="A 3D Particle head moving on sound">
+	<meta property="twitter:image" content="/images/header.jpg">
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+	<link rel="manifest" href="/images/site.webmanifest">
+	<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#000000">
+	<link rel="shortcut icon" href="/images/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="/images/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo1.css" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+
+	<script>document.documentElement.className = "js"; var supportsCssVars = function () { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e }; supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+</head>
+
+<body class="demo-1">
+	<button type="button" aria-label="toggle-music">
+		<svg id="pause" xmlns="http://www.w3.org/2000/svg" height="327pt" viewBox="-45 0 327 327" width="327pt">
+			<path
+				d="m158 0h71c4.417969 0 8 3.582031 8 8v311c0 4.417969-3.582031 8-8 8h-71c-4.417969 0-8-3.582031-8-8v-311c0-4.417969 3.582031-8 8-8zm0 0" />
+			<path
+				d="m8 0h71c4.417969 0 8 3.582031 8 8v311c0 4.417969-3.582031 8-8 8h-71c-4.417969 0-8-3.582031-8-8v-311c0-4.417969 3.582031-8 8-8zm0 0" />
+		</svg>
+		<svg id="play" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+			viewBox="0 0 494.148 494.148" style="enable-background:new 0 0 494.148 494.148;" xml:space="preserve">
+			<path
+				d="M405.284,201.188L130.804,13.28C118.128,4.596,105.356,0,94.74,0C74.216,0,61.52,16.472,61.52,44.044v406.124    c0,27.54,12.68,43.98,33.156,43.98c10.632,0,23.2-4.6,35.904-13.308l274.608-187.904c17.66-12.104,27.44-28.392,27.44-45.884    C432.632,229.572,422.964,213.288,405.284,201.188z" />
+		</svg>
+	</button>
+	<main>
+		<div class="frame full-height">
+			<div class="container">
+				<img src="/images/sample-01.png" alt="Gandalf">
+				<button id="allow-music"><span class="loading">Loading...</span> <span class="after-loading"><svg
+							xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+							stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+							class="feather feather-volume-2">
+							<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+							<path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07" /></svg> Enter the
+						experience</span></button>
+
+			</div>
+		</div>
+		<p style="font-size: .75rem; position: absolute; bottom: 0; left: 50%;transform: translateX(-50%)">
+			Website with 💙 by <a href="https://level30wizards.com">Level30Wizards</a>
+		</p>
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.sound.min.js"></script>
+</body>
+
+</html>

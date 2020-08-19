@@ -1,0 +1,137 @@
+body {
+  background-color: #000;
+  margin: 0;
+}
+
+.full-height {
+  min-height: 100vh;
+}
+
+.hide-bg {
+  background-color: black;
+}
+
+:root {
+  --mapBass: 0;
+  --mapTremble: 0;
+  --mapLowMid: 0;
+  --mapMid: 0;
+  --mapHighMid: 0;
+}
+
+[aria-label="toggle-music"] {
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 0;
+  width: 3rem;
+  height: 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  padding: 1rem;
+}
+
+[aria-label="toggle-music"] svg {
+  width: 1rem;
+  height: 1rem;
+  fill: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#play {
+  opacity: 0;
+  visibility: hidden;
+}
+.frame {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+
+.frame .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* @media (max-width: 48rem) {
+	.frame .container canvas {
+		transform: scale(0.75);
+	}
+} */
+
+.container img {
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: auto;
+}
+
+#allow-music span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.25rem;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#allow-music span svg {
+  margin-right: 0.5rem;
+}
+#allow-music:hover,
+#allow-music:focus {
+  background-color: #2c0063;
+}
+#allow-music {
+  -webkit-appearance: none;
+  background: none;
+  background-color: #6800ed;
+  border: 0;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: visible;
+  width: 13rem;
+  height: 4rem;
+  margin-top: 1rem;
+  transition: all 150ms ease-out;
+}
+
+#defaultCanvas0,
+#p5_loading {
+  display: none;
+}
+
+.enabled-after-click {
+  min-height: 100vh;
+}
+
+.content__wrapper {
+  padding: 5%;
+}
+
+.full-height.black {
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 1);
+}
+.full-height.white {
+  min-height: 100vh;
+  background-color: rgba(255, 255, 255, 1);
+}
